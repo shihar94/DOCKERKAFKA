@@ -5,7 +5,7 @@ services:
     image: confluentinc/cp-zookeeper
     restart: always
     hostname: zookeeper
-    container_name: zookeeper1
+    container_name: zookeeper
     healthcheck:
       test: echo srvr | nc zookeeper 2181 || exit 1
       retries: 20
